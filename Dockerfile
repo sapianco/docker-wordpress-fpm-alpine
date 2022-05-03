@@ -34,5 +34,10 @@ RUN set -xe && \
     rm -rf /tmp/* && \
     apk del .memcached-deps .phpize-deps
 
+
+# Add WP-CLI 
+RUN curl -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+RUN chmod +x /bin/wp-cli.phar
+
 USER ${USER}
 
