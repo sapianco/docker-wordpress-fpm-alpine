@@ -1,4 +1,4 @@
-FROM wordpress:5.7.2-fpm-alpine
+FROM wordpress:6.0.2-fpm-alpine
 
 ENV USER=sapian
 ENV UID=1001
